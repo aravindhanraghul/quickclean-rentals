@@ -5,151 +5,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QuickClean Rentals</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
     }
 
     body {
-      background-color: #f9f9f9;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f8fc;
       color: #333;
+      padding: 20px;
     }
 
     header {
-      background: #ffffff;
-      padding: 16px 20px;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 22px;
-      font-weight: 700;
-      color: #e3342f;
-    }
-
-    .search-bar input {
-      padding: 8px;
-      width: 250px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .login-button {
-      padding: 8px 16px;
-      background: #e3342f;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .hero {
-      background: linear-gradient(to right, #f85032, #e73827);
+      background-color: #005b96;
+      padding: 20px 16px;
+      border-radius: 12px;
       color: white;
-      padding: 40px 20px;
       text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 16px;
       margin-bottom: 20px;
     }
 
-    .hero img {
-      width: 280px;
-      margin-top: 20px;
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
     }
 
-    .services {
-      padding: 40px 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: auto;
+    header p {
+      font-size: 1rem;
+      font-weight: 600;
     }
 
-    .service-card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    .section {
+      background-color: white;
+      border-radius: 12px;
       padding: 20px;
-      text-align: center;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
 
-    .service-card img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
+    .section h2 {
+      font-size: 1.5rem;
+      color: #005b96;
+      margin-bottom: 10px;
     }
 
-    .service-card h3 {
-      margin: 12px 0 6px;
-      font-size: 18px;
+    .section p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .images {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .images img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      object-fit: cover;
     }
 
     footer {
-      background: #333;
-      color: #fff;
-      padding: 20px;
       text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <div class="logo">QuickClean Rentals</div>
-    <div class="search-bar">
-      <input type="text" placeholder="Search equipment..." />
-    </div>
-    <button class="login-button">Login/Signup</button>
+    <h1>QuickClean Rentals</h1>
+    <p>Electric Mops · Vacuum Cleaners · Robotic Mops · Steam Cleaners</p>
+    <p>📞 Call us: <strong>7871493796</strong></p>
   </header>
 
-  <section class="hero">
-    <h1>Rent Electric Mops & More</h1>
-    <p>Home cleaning made easier – Rent today at affordable prices</p>
-    <img src="https://cdn-icons-png.flaticon.com/512/2879/2879591.png" alt="Cleaning Equipment" />
-  </section>
+  <div class="section">
+    <h2>Why Choose Us?</h2>
+    <p>✅ Hassle-free rentals for home cleaning appliances</p>
+    <p>✅ Affordable daily, weekly & monthly plans</p>
+    <p>✅ Free doorstep delivery in Whitefield, Bangalore</p>
+  </div>
 
-  <section class="services">
-    <div class="service-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/860/860769.png" alt="Electric Mop">
-      <h3>Electric Mops</h3>
-      <p>Powerful, lightweight mops for all floor types.</p>
+  <div class="section">
+    <h2>Our Products</h2>
+    <div class="images">
+      <img src="https://images.unsplash.com/photo-1616627986310-3e2285d670d2?auto=format&fit=crop&w=600&q=60" alt="Electric Mop" />
+      <img src="https://images.unsplash.com/photo-1598514982376-9a0aeeb1a107?auto=format&fit=crop&w=600&q=60" alt="Vacuum Cleaner" />
+      <img src="https://images.unsplash.com/photo-1603352521985-fb4f1fbd2c77?auto=format&fit=crop&w=600&q=60" alt="Steam Cleaner" />
     </div>
-    <div class="service-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/4721/4721049.png" alt="Vacuum Cleaner">
-      <h3>Vacuum Cleaners</h3>
-      <p>Deep clean your home easily and efficiently.</p>
-    </div>
-    <div class="service-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/2734/2734082.png" alt="Robotic Mop">
-      <h3>Robotic Mops</h3>
-      <p>Automatic cleaning for hassle-free life.</p>
-    </div>
-    <div class="service-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/2844/2844640.png" alt="Steam Cleaner">
-      <h3>Steam Cleaners</h3>
-      <p>Sanitize your floors and tiles with ease.</p>
-    </div>
-  </section>
+  </div>
+
+  <div class="section">
+    <h2>Contact & Booking</h2>
+    <p>📍 Based in Whitefield, Bangalore</p>
+    <p>📱 WhatsApp Only: <strong>7871493796</strong></p>
+    <p>📧 Email: aravindhanaravindhan03@gmail.com</p>
+  </div>
 
   <footer>
-    <p>Contact us: 7871493796 | Whitefield, Bangalore</p>
-    <p>&copy; 2025 QuickClean Rentals</p>
+    &copy; 2025 QuickClean Rentals. All rights reserved.
   </footer>
 </body>
 

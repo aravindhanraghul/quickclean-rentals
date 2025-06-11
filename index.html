@@ -5,57 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickClean Rentals</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
   </head>
   <body class="bg-gray-50 text-gray-900">
-    <header class="bg-blue-600 text-white text-center py-6">
-      <h1 class="text-3xl font-bold">QuickClean Rentals</h1>
-      <p class="text-sm mt-1">Electric mops, vacuum cleaners, robotic mops, steam cleaners</p>
+    <!-- Header -->
+    <header class="bg-white border-b shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <img src="https://i.imgur.com/X9tx1yo.png" class="h-10" alt="QuickClean Logo" />
+          <span class="text-2xl font-bold text-blue-700">QuickClean Rentals</span>
+        </div>
+        <div class="flex gap-4 items-center">
+          <input
+            type="text"
+            placeholder="Find your device"
+            class="px-4 py-2 border rounded-full w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button class="bg-red-600 text-white px-4 py-2 rounded-md font-medium">
+            Login / Signup
+          </button>
+        </div>
+      </div>
     </header>
 
-    <section class="p-5 space-y-4">
-      <nav class="mb-4">
-        <a href="about.html" class="text-blue-600 underline mr-4">About Us</a>
-        <a href="contact.html" class="text-blue-600 underline">Contact</a>
-      </nav>
-
-      <img
-        src="https://images.unsplash.com/photo-1581579185169-04b8d3f9a436"
-        alt="Cleaning Equipment"
-        class="rounded-lg shadow w-full"
-      />
-
-      <div class="bg-white rounded-lg shadow p-4">
-        <h2 class="text-xl font-semibold mb-2">Why Rent from Us?</h2>
-        <ul class="list-disc pl-5 space-y-1 text-sm">
-          <li>Daily, Weekly, and Monthly rental options</li>
-          <li>Deep cleaning without the cost of buying machines</li>
-          <li>On-time delivery and pickup in Whitefield, Bangalore</li>
-          <li>Support available on WhatsApp</li>
-        </ul>
-      </div>
-
-      <div class="bg-white rounded-lg shadow p-4">
-        <h2 class="text-xl font-semibold mb-2">Available Devices</h2>
-        <ul class="list-disc pl-5 space-y-1 text-sm">
-          <li>🧹 Electric Mops</li>
-          <li>🧼 Robotic Mops</li>
-          <li>🌀 Steam Cleaners</li>
-          <li>🧽 Vacuum Cleaners</li>
-        </ul>
-      </div>
-
-      <div class="text-center mt-6">
-        <a
-          href="https://wa.me/917871493796"
-          class="inline-block bg-green-600 text-white px-6 py-3 rounded-full text-lg shadow hover:bg-green-700 transition"
-        >
-          📱 WhatsApp Us to Book
-        </a>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-red-500 to-red-600 text-white">
+      <div class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1">
+          <p class="text-lg">Get Started Today!</p>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">EQUIPMENT ON RENT</h1>
+          <p class="text-sm md:text-base mb-6">
+            Rent electric mops, steam cleaners, robotic mops, vacuum cleaners & more.
+            Affordable, hassle-free, and ready to use. Perfect for homes, clinics, and PGs in Whitefield.
+          </p>
+          <a
+            href="https://wa.me/917871493796"
+            class="bg-white text-red-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-red-100 transition"
+            >RENT NOW</a
+          >
+        </div>
+        <div class="flex-1">
+          <img
+            src="https://i.imgur.com/CuX3jDD.png"
+            alt="Rental Equipment Display"
+            class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+          />
+        </div>
       </div>
     </section>
 
-    <footer class="text-center text-xs text-gray-500 py-4">
-      © 2025 QuickClean Rentals. All rights reserved.
+    <!-- Footer -->
+    <footer class="text-center py-6 text-sm text-gray-500">
+      © 2025 QuickClean Rentals. Built with ❤️ in Bangalore.
     </footer>
   </body>
 </html>

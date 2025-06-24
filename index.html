@@ -1,119 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickClean Rentals</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QuickClean Rentals</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f7f8fc;
-      color: #333;
-      padding: 20px;
-    }
+  <body>
+    <header>
+      <h1>QuickClean Rentals</h1>
+      <p>Electric Mops · Vacuum Cleaners · Robotic Mops · Steam Cleaners</p>
+      <p>📞 Call us: <strong>7871493796</strong></p>
+    </header>
 
-    header {
-      background-color: #005b96;
-      padding: 20px 16px;
-      border-radius: 12px;
-      color: white;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .section {
-      background-color: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    .section h2 {
-      font-size: 1.5rem;
-      color: #005b96;
-      margin-bottom: 10px;
-    }
-
-    .section p {
-      font-size: 1rem;
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
-
-    .images {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .images img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>QuickClean Rentals</h1>
-    <p>Electric Mops · Vacuum Cleaners · Robotic Mops · Steam Cleaners</p>
-    <p>📞 Call us: <strong>7871493796</strong></p>
-  </header>
-
-  <div class="section">
-    <h2>Why Choose Us?</h2>
-    <p>✅ Hassle-free rentals for home cleaning appliances</p>
-    <p>✅ Affordable daily, weekly & monthly plans</p>
-    <p>✅ Free doorstep delivery in Whitefield, Bangalore</p>
-  </div>
-
-  <div class="section">
-    <h2>Our Products</h2>
-    <div class="images">
-      <img src="https://images.unsplash.com/photo-1616627986310-3e2285d670d2?auto=format&fit=crop&w=600&q=60" alt="Electric Mop" />
-      <img src="https://images.unsplash.com/photo-1598514982376-9a0aeeb1a107?auto=format&fit=crop&w=600&q=60" alt="Vacuum Cleaner" />
-      <img src="https://images.unsplash.com/photo-1603352521985-fb4f1fbd2c77?auto=format&fit=crop&w=600&q=60" alt="Steam Cleaner" />
+    <div class="section">
+      <h2>Why Choose Us?</h2>
+      <p>✅ Hassle-free rentals for home cleaning appliances</p>
+      <p>✅ Affordable daily, weekly & monthly plans</p>
+      <p>✅ Free doorstep delivery in Whitefield, Bangalore</p>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Contact & Booking</h2>
-    <p>📍 Based in Whitefield, Bangalore</p>
-    <p>📱 WhatsApp Only: <strong>7871493796</strong></p>
-    <p>📧 Email: aravindhanaravindhan03@gmail.com</p>
-  </div>
+    <div class="section">
+      <h2>Our Products</h2>
+      <div class="images">
+        <div class="image-container">
+          <img src="src/assets/electric-mop.png" alt="Electric Mop" />
+          <span>Electric Mop<div class="product-pricing"><p>₹250 -/ day</p><p>₹800 -/ week</p><p>₹1700 -/ Month</p></div></span>
+        </div>
+        <div class="image-container">
+          <img src="src/assets/Vaccum.png" alt="Vacuum Cleaner" />
+          <span>Vacuum Cleaner<div class="product-pricing"><p>₹300 -/ day</p><p>₹900 -/ week</p><p>₹1800 -/ Month</p></div></span>
+        </div>
+        <div class="image-container">
+          <img src="src/assets/Steam.png" alt="Steam Cleaner" />
+          <span>Steam Cleaner<div class="product-pricing"><p>₹250 -/ day</p><p>₹750 -/ week</p><p>₹1650 -/ Month</p></div></span>
+        </div>
+      </div>
+    </div>
 
-  <footer>
-    &copy; 2025 QuickClean Rentals. All rights reserved.
-  </footer>
-</body>
+    <div class="section">
+      <h2>Contact & Booking</h2>
+      <p>📍 Based in Whitefield, Bangalore</p>
+      <p>📱 WhatsApp Only: <strong>7871493796</strong></p>
+      <p>📧 Email: aravindhanaravindhan03@gmail.com</p>
+    </div>
 
+    <footer>&copy; 2025 QuickClean Rentals. All rights reserved.</footer>
+  </body>
 </html>
